@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <title>🍨Yogurt</title>
   </head>
   <style>
@@ -36,15 +42,15 @@
       display: block;
       margin: 20px auto;
       font: 12px;
-      border-radius: 50px;
-      padding: 10px;
+      border-radius: 10px;
+      padding: 20px 30px;
       background-color: #f55121;
     }
 
     button:hover {
       color: #8f4247;
       font: 20px;
-      transition: all 150 ease-in-out;
+      transition: all 120 ease-in-out;
     }
 
     a {
@@ -81,10 +87,8 @@
 
     footer {
       text-align: left;
-      font-size: 14px;
+      font-size: 18px;
       color: #8f4247;
-      padding-left: 70px;
-      padding-right: 70px;
     }
 
     footer:hover {
@@ -98,54 +102,70 @@
   </style>
   <body>
     <hr />
-    <h1><strong>I Love Yogurt</strong></h1>
-    <br />
-    <h2>Especially Greek Yogurt</h2>
+    <div class="container">
+      <h1><strong>I Love Yogurt</strong></h1>
+      <br />
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <img
+            src="Greek-Yogurt-Parfait.jpg"
+            class="img-fluid"
+            alt="Yogurt"
+            width="400px"
+          />
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+      <br />
 
-    <img src="Greek-Yogurt-Parfait.jpg" alt="Yogurt" width="400px" />
+      <h2>Especially Greek Yogurt</h2>
 
-    <br />
-    <p>
-      Yogurt from Turkish: yoğurt, also spelled yoghurt, yogourt or yoghourt is
-      a food produced by bacterial fermentation of milk.[2] The bacteria used to
-      make yogurt are known as yogurt cultures. Fermentation of sugars in the
-      milk by these bacteria produces lactic acid, which acts on milk protein to
-      give yogurt its texture and characteristic tart flavor.[2] Cow's milk is
-      the milk most commonly used to make yogurt. Milk from water buffalo,
-      goats, ewes, mares, camels, and yaks are also used to produce yogurt. The
-      milk used may be homogenized or not. It may be pasteurized or raw. Each
-      type of milk produces substantially different results. Yogurt is produced
-      using a culture of Lactobacillus delbrueckii subsp. bulgaricus and
-      Streptococcus thermophilus bacteria. In addition, other lactobacilli and
-      bifidobacteria are sometimes added during or after culturing yogurt. Some
-      countries require yogurt to contain a specific amount of colony-forming
-      units (CFU) of bacteria; in China, for example, the requirement for the
-      number of lactobacillus bacteria is at least 1 million CFU per
-      milliliter.[3]
-    </p>
-    <hr />
-    <br />
+      <br />
+      <p>
+        Yogurt from Turkish: yoğurt, also spelled yoghurt, yogourt or yoghourt
+        is a food produced by bacterial fermentation of milk. The bacteria used
+        to make yogurt are known as yogurt cultures. Fermentation of sugars in
+        the milk by these bacteria produces lactic acid, which acts on milk
+        protein to give yogurt its texture and characteristic tart flavor. Cow's
+        milk is the milk most commonly used to make yogurt. Milk from water
+        buffalo, goats, ewes, mares, camels, and yaks are also used to produce
+        yogurt. The milk used may be homogenized or not. It may be pasteurized
+        or raw. Each type of milk produces substantially different results.
+        Yogurt is produced using a culture of Lactobacillus delbrueckii subsp.
+        bulgaricus and Streptococcus thermophilus bacteria. In addition, other
+        lactobacilli and bifidobacteria are sometimes added during or after
+        culturing yogurt. Some countries require yogurt to contain a specific
+        amount of colony-forming units (CFU) of bacteria; in China, for example,
+        the requirement for the number of lactobacillus bacteria is at least 1
+        million CFU per milliliter.
+      </p>
+      <hr />
+      <br />
 
-    <a href="https://en.wikipedia.org/wiki/Yogurt">
-      <strong class="learn">Learn More</strong>
-    </a>
+      <a href="https://en.wikipedia.org/wiki/Yogurt">
+        <strong class="learn">Learn More</strong>
+      </a>
 
-    <br />
+      <br />
 
-    <button>Try Our Yogurt</button>
-    <footer><em>Created by Adeola Ilavbare</em></footer>
+      <button>Try Our Yogurt</button>
+      <footer><em>Created by Adeola Ilavbare</em></footer>
 
-    <script>
-      function order() {
-        let name = prompt("What is your name?");
-        let orderType = prompt("What type of Yogurt would you like to order?");
-        alert("Thanks" + " " + name + " " + "Your order has been taken!");
+      <script>
+        function order() {
+          let name = prompt("What is your name?");
+          let orderType = prompt(
+            "What type of Yogurt would you like to order?"
+          );
+          alert("Thanks" + " " + name + " " + "Your order has been taken!");
 
-        //let button = document.querySelector("button");
-      }
+          //let button = document.querySelector("button");
+        }
 
-      let orderNow = document.querySelector("button");
-      orderNow.addEventListener("click", order);
-    </script>
+        let orderNow = document.querySelector("button");
+        orderNow.addEventListener("click", order);
+      </script>
+    </div>
   </body>
 </html>
